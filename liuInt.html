@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>刘INT</title>
+		<style>
+			div{white-space: nowrap;overflow: hidden;}
+		</style>
+	</head>
+	<body>
+		<div id="ms" class="ms">有机蔬菜 新鲜供应热死,重!庆人</div>
+	</body>
+	<script type="text/javascript">
+		var msg = document.getElementById("ms");
+		var msg_content = msg.innerHTML;
+		if(msg_content.length > 9){
+			msg.innerHTML = msg_content.substring(0,9);
+		}
+	</script>
+</html>

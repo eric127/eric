@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时器</title>
+		<style>
+			#time{width: 600px;
+						height: 80px;
+						font-size: 50px;
+						color: greenyellow;
+						line-height: 80px;
+						text-align: center;
+						background-color: #808080;
+						margin: 0 auto;
+						opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="time"></div>
+		
+	</body>
+	<script type="text/javascript">
+		function setT(){
+			
+			var divt = document.getElementById("time");
+			var time = new Date();
+			var y = time.getFullYear();
+			var m = time.getMonth()+1;
+			var d = time.getDate();
+			var h = time.getHours();
+			var mi = time.getMinutes();
+			var s = time.getSeconds();
+			
+			divt.innerHTML = y+'年'+m+'月'+d+"日   "+h+':'+mi+':'+s;
+			
+		}
+		setInterval("setT()",500);
+	</script>
+</html>
